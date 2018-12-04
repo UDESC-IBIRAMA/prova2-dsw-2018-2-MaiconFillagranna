@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Biblioteca</title>
+        <meta charset="UTF-8">
+        <meta id="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jsquestao1.js"></script>
+        
+    </head>
+    <body>
+        
+        <div class="menu">
+            <div class="row"><a class="link" href="questao1.html">Novo</a></div>
+            <div class="row"><a class="link" href="questao1nada.html">Outra</a></div>
+        </div>
+            <div class="col-md-4">
+                <form style="padding-left: 100px">
+                    <div class="row formulario">
+                        <label>ISBN</label>
+                        <input class="requerido" type="text" id="isbn" required>
+                    </div>
+                    <div class="row formulario">
+                        <label>Título</label>
+                        <input type="text" id="titulo">
+                    </div>
+                    <div class="row formulario">
+                        <label>Autor</label>
+                        <input class="requerido" type="text" id="autor" required>
+                    </div>
+                    <div class="row formulario">
+                        <label>Editora</label>
+                        <input type="text" id="editora">
+                    </div>
+                    <div class="row formulario">
+                        <label>Ano</label>
+                        <input type="number" id="ano">
+                    </div>
+                    <div class="row formulario">
+                        <label>Quantidade</label>                    
+                        <input class="requerido" type="number" id="ano" required>
+                    </div>
+                    <div class="row formulario">
+                        <button type="submit" onclick="onClickSalvar()">Salvar</button>
+                        <button onclick="onClickResultados()">Resultados</button>
+                    </div>
+                </form>
+                <table id="tabela">
+                </table>
+        </div>
+    </body>
+</html>
+<style>
+    .menu{
+        width: 10%;
+        background-color: background;
+        border-radius: 10px;
+        float:left;
+        height: 250px;
+        margin-right: 30px;
+    }
+    
+    .requerido{
+        font-family: serif;
+        border-color: red;
+        border-radius: 4px
+    }
+    
+    .formulario{
+        padding-bottom: 10px;
+    }
+    
+    .link {
+        color: white;
+        margin-left: 40px;
+    }
+    
+    th, td{
+        border: 1px solid black;
+    }
+    
+    #tabela {
+        border: 1px solid black;
+    }
+</style>
